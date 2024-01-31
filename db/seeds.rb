@@ -12,7 +12,7 @@ Article.destroy_all
 puts 'seeding the database....'
 
 10.times do
-  Article.create!(title: Faker::Movie.title, content: Faker::Lorem.paragraphs(number: 3))
+  Article.create!(title: Faker::Movie.title, content: Faker::Quote.yoda)
 end
 
 puts 'Finished!'
