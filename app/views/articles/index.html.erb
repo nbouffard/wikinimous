@@ -1,6 +1,8 @@
-<% @articles.each do |article| %>
-  <ul>
-    <%= link_to article.title, article_path(article) %>
-    <p><%= article.content %></p>
-  </ul>
-<% end %>
+<div class='container w-75 mt-5 px-0'>
+  <% @articles.each do |article| %>
+    <ul class='px-0'>
+      <h4 class="title"><%= link_to article.title, article_path(article), class: 'text-decoration-none title' %></h4>
+      <p class="text-truncate"><%= article.content %></p>
+    </ul>
+  <% end %>
+</div>
